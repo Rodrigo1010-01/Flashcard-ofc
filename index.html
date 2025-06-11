@@ -1,108 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionários da Escola - Flashcards</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flash Cards Interativos - Equipe Escolar</title>
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1 class="main-title">PRINCIPAIS FUNCIONÁRIOS DA ESCOLA</h1>
-        <div class="flashcard-grid">
-            <div class="flashcard" id="diretor">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>Diretor</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <img src="placeholder.jpg" alt="Foto do Diretor Luciano">
-                        <h3>Diretor Luciano</h3>
-                        <p>O diretor é responsável pela administração geral da escola, incluindo a supervisão de equipes, a gestão de recursos e o planejamento educacional.</p>
-                    </div>
-                </div>
-            </div>
+<header role="banner">
+  <div class="logo" aria-label="Logotipo da aplicação">
+    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2L2 7v10l10 5 10-5V7l-10-5zM12 22l-7-3.5V8.08l7-3.5 7 3.5v10.42L12 22zm0-14-4 2v4l4 2 4-2v-4l-4-2z"/>
+    </svg>
+    Equipe Escolar
+  </div>
+</header>
 
-            <div class="flashcard" id="pedagoga">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>Pedagoga</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <img src="placeholder.jpg" alt="Foto da Pedagoga Sabrina">
-                        <h3>Pedagoga Sabrina</h3>
-                        <p>A pedagoga atua no desenvolvimento e acompanhamento do processo de ensino-aprendizagem, oferecendo suporte a alunos e professores.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flashcard" id="professor-tecnologia">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>Professor de Tecnologia</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <img src="placeholder.jpg" alt="Foto de Rafael e Maria Laura">
-                        <h3>Rafael e Maria Laura</h3>
-                        <p>Os professores de tecnologia são responsáveis por ensinar e desenvolver habilidades digitais e de informática aos alunos.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flashcard" id="inspetor">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>Inspetor</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <img src="placeholder.jpg" alt="Foto da Inspetora Isaíde">
-                        <h3>Inspetora Isaíde</h3>
-                        <p>O inspetor(a) zela pela disciplina e segurança dos alunos, garantindo um ambiente escolar harmonioso.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flashcard" id="professor-humanas">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>Professor de Humanas</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <img src="placeholder.jpg" alt="Foto do Professor Carlos Inglês">
-                        <h3>Carlos Inglês</h3>
-                        <p>O professor de Humanas leciona disciplinas como História, Geografia, Filosofia e Sociologia.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flashcard" id="professor-exatas">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>Professor de Exatas</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <img src="placeholder.jpg" alt="Foto da Professora Francismara">
-                        <h3>Francismara</h3>
-                        <p>A professora de Exatas ensina disciplinas como Matemática, Física e Química.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flashcard" id="funcionario-biblioteca">
-                <div class="flashcard-inner">
-                    <div class="flashcard-front">
-                        <p>Funcionário da Biblioteca</p>
-                    </div>
-                    <div class="flashcard-back">
-                        <img src="placeholder.jpg" alt="Foto da Laryssa">
-                        <h3>Laryssa</h3>
-                        <p>O funcionário da biblioteca organiza o acervo, auxilia os alunos na pesquisa e promove a leitura.</p>
-                    </div>
-                </div>
-            </div>
-
+<main role="main" aria-label="Flash cards de equipe escolar">
+  <section class="cards-grid">
+    <article tabindex="0" class="card" role="button" aria-pressed="false" data-id="diretor" aria-describedby="desc-diretor">
+      <div class="card-inner">
+        <div class="card-front" aria-hidden="true">
+          <div class="card-icon">👨‍💼</div>
+          <h2 class="card-title" id="desc-diretor">Quem é o Diretor</h2>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="card-back" aria-hidden="true">
+          <p class="card-back-text">Diretor - Luciano</p>
+        </div>
+      </div>
+    </article>
+    <article tabindex="0" class="card" role="button" aria-pressed="false" data-id="pedagoga" aria-describedby="desc-pedagoga">
+      <div class="card-inner">
+        <div class="card-front" aria-hidden="true">
+          <div class="card-icon">👩‍🏫</div>
+          <h2 class="card-title" id="desc-pedagoga">Pedagoga</h2>
+        </div>
+        <div class="card-back" aria-hidden="true">
+          <p class="card-back-text">Pedagoga - Sabrina</p>
+        </div>
+      </div>
+    </article>
+    <article tabindex="0" class="card" role="button" aria-pressed="false" data-id="inspetora" aria-describedby="desc-inspetora">
+      <div class="card-inner">
+        <div class="card-front" aria-hidden="true">
+          <div class="card-icon">👮‍♀️</div>
+          <h2 class="card-title" id="desc-inspetora">Inspetora</h2>
+        </div>
+        <div class="card-back" aria-hidden="true">
+          <p class="card-back-text">Inspetora - Isaíde</p>
+        </div>
+      </div>
+    </article>
+    <article tabindex="0" class="card" role="button" aria-pressed="false" data-id="bibliotecaria" aria-describedby="desc-bibliotecaria">
+      <div class="card-inner">
+        <div class="card-front" aria-hidden="true">
+          <div class="card-icon">📚</div>
+          <h2 class="card-title" id="desc-bibliotecaria">Bibliotecária</h2>
+        </div>
+        <div class="card-back" aria-hidden="true">
+          <p class="card-back-text">Bibliotecária - Laryssa</p>
+        </div>
+      </div>
+    </article>
+    <article tabindex="0" class="card" role="button" aria-pressed="false" data-id="humanas" aria-describedby="desc-humanas">
+      <div class="card-inner">
+        <div class="card-front" aria-hidden="true">
+          <div class="card-icon">📖</div>
+          <h2 class="card-title" id="desc-humanas">Professor de Humanas</h2>
+        </div>
+        <div class="card-back" aria-hidden="true">
+          <p class="card-back-text">Professor de Humanas - Carlos</p>
+        </div>
+      </div>
+    </article>
+    <article tabindex="0" class="card" role="button" aria-pressed="false" data-id="exatas" aria-describedby="desc-exatas">
+      <div class="card-inner">
+        <div class="card-front" aria-hidden="true">
+          <div class="card-icon">🧮</div>
+          <h2 class="card-title" id="desc-exatas">Professor de Exatas</h2>
+        </div>
+        <div class="card-back" aria-hidden="true">
+          <p class="card-back-text">Professor de Exatas - Francismara</p>
+        </div>
+      </div>
+    </article>
+    <article tabindex="0" class="card" role="button" aria-pressed="false" data-id="tecnologia" aria-describedby="desc-tecnologia">
+      <div class="card-inner">
+        <div class="card-front" aria-hidden="true">
+          <div class="card-icon">💻</div>
+          <h2 class="card-title" id="desc-tecnologia">Professores de tecnologia</h2>
+        </div>
+        <div class="card-back" aria-hidden="true">
+          <p class="card-back-text">Professores de Tecnologia - Rafael e Maria Laura</p>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
+
