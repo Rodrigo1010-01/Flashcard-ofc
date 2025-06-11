@@ -1,23 +1,17 @@
-criaCartao(
-    'Programação',
-    'O que é Python?',
-    'O Python é uma linguagem de programação'
-)
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('is-flipped');
+    // Atualiza aria-pressed para acessibilidade
+    const isFlipped = card.classList.contains('is-flipped');
+    card.setAttribute('aria-pressed', isFlipped ? 'true' : 'false');
+  });
+  card.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      card.classList.toggle('is-flipped');
+      const isFlipped = card.classList.contains('is-flipped');
+      card.setAttribute('aria-pressed', isFlipped ? 'true' : 'false');
+    }
+  });
+});
 
-criaCartao(
-    'Geografia',
-    'Qual a capital da França?',
-    'A capital da França é Paris'
-)
-
-criaCartao(
-    'Programação',
-    'O que é uma função?',
-    'Uma função é um bloco de código que executa alguma tarefa'
-)
-
-criaCartao(
-    'Lingua inglesa',
-    'Como se diz oi em Inglês?',
-    'Oi em ingles é HI (RAI)'
-)
