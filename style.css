@@ -211,6 +211,7 @@ footer a:focus {
   color: #b388ff;
   outline: none;
 }
+
 footer a:hover svg,
 footer a:focus svg {
   fill: #b388ff;
